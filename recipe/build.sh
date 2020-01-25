@@ -17,5 +17,5 @@ export FLAGS_NOAH="-fPIC -p -g -ffree-form -fdefault-real-8 -ffree-line-length-n
 export FLAGS_COMM="-fPIC -p -g -Wall -ffree-line-length-none -fmax-errors=0 -fbacktrace -fcheck=bounds"
 export FLAGS_SUMMA=${FLAGS_COMM}
 
-export EXE_PATH="${PREFIX}"
+export EXE_PATH="${PREFIX}/bin"
 make -C ${F_MASTER}/build/ -f Makefile
