@@ -14,14 +14,14 @@ export LIBLAPACK="$LDFLAGS -L${PREFIX}/lib -Wl,-rpath,${PREFIX}/lib -llapack -lb
 export INCLUDES='-I${PREFIX}/include -I/usr/include'
 export LIBRARIES='-L${PREFIX}/lib -lnetcdff -L/usr/lib -llapack -lblas'
 
-export CFLAGS="$CFLAGS -fPIC -I${PREFIX}/include"
+export CFLAGS="$CFLAGS -fPIC -I$PREFIX/include"
 export FLAGS_NOAH="-fPIC -p -g -ffree-form -fdefault-real-8 -ffree-line-length-none -fmax-errors=0 -fbacktrace -Wno-unused -Wno-unused-dummy-argument"
 export FLAGS_COMM="-fPIC -p -g -Wall -ffree-line-length-none -fmax-errors=0 -fbacktrace -fcheck=bounds"
 export FLAGS_SUMMA=${FLAGS_COMM}
 
-export EXE_PATH="${PREFIX}/bin"
+export EXE_PATH="$PREFIX/bin"
 echo '-------------------------------------------'
 echo $(pwd)
-echo ${PREFIX}
+echo $PREFIX
 echo '-------------------------------------------'
 make -C ${F_MASTER}/build/ -f Makefile
