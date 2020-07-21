@@ -20,8 +20,5 @@ export FLAGS_COMM="-fPIC -p -g -Wall -ffree-line-length-none -fmax-errors=0 -fba
 export FLAGS_SUMMA=${FLAGS_COMM}
 
 export EXE_PATH="$PREFIX/bin"
-echo '-------------------------------------------'
-echo $(pwd)
-echo $PREFIX
-echo '-------------------------------------------'
 make -C ${F_MASTER}/build/ -f Makefile
+mv $F_MASTER/bin/summa.exe $PREFIX/bin/summa.exe
