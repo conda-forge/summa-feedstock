@@ -21,6 +21,7 @@ export FLAGS_SUMMA=${FLAGS_COMM}
 
 export EXE_PATH="${PREFIX}/bin"
 echo '-------------------------------------------'
-echo $(PWD)
+echo $(pwd)
+echo ${PREFIX}
 echo '-------------------------------------------'
 make -C ${F_MASTER}/build/ -f Makefile
