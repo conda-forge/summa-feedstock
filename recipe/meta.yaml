@@ -11,7 +11,7 @@ source:
     - remove_pg.patch
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win]
 
 requirements:
