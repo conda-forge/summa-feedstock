@@ -9,7 +9,7 @@ source:
   sha256: 7a86e78ddcb3090b7517d067a0c29c2d938b1dfcf2d12d05e7b58f19777310af
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
 
 test:
   commands:
-    - summa.exe -v
+    - $SRC_DIR/summa.exe -v
 
 
 about:
