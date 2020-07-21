@@ -7,11 +7,9 @@ package:
 source:
   url: https://github.com/ncar/summa/archive/v{{ version }}.tar.gz
   sha256: 7a86e78ddcb3090b7517d067a0c29c2d938b1dfcf2d12d05e7b58f19777310af
-  patches:
-    - remove_pg.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
