@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: summa
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/ncar/summa/archive/v{{ version }}.tar.gz
-  sha256: f117aaa889ac785cbde4cd236ec4ed8afacdc91df4a3cdfb6de0f7492d974d97
+  sha256: 7a86e78ddcb3090b7517d067a0c29c2d938b1dfcf2d12d05e7b58f19777310af
   patches:
     - remove_pg.patch
 
