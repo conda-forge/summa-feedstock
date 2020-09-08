@@ -15,12 +15,16 @@ build:
 requirements:
   build:
     - {{ compiler('fortran') }}
+    - liblapack
+    - libblas
     - netcdf-fortran
   host:
     - liblapack
     - libblas
     - netcdf-fortran
   run:
+    - liblapack
+    - libblas
     - netcdf-fortran
     
 test:
