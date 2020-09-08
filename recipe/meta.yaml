@@ -5,8 +5,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/ncar/summa/archive/v{{ version }}.tar.gz
-  sha256: 5d427fddd6d0d33af8c16bbb08cd9818514a518048b4719ce6bbedc3d79640c0
+  git_url: https://github.com/ncar/summa.git
+  git_rev: v{{ version }}
+  git_depth: 1 # (Defaults to -1/not shallow)
 
 build:
   number: 1
