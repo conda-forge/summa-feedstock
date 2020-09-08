@@ -10,22 +10,31 @@ source:
   git_depth: 1 # (Defaults to -1/not shallow)
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('fortran') }}
+    - liblapack
+    - libblas
+    - netcdf-fortran
   host:
     - liblapack
     - libblas
     - netcdf-fortran
   run:
+    - liblapack
+    - libblas
     - netcdf-fortran
-
+    
+test:
+  commands:
+    - summa.exe --help
+    
 about:
   home: http://github.com/ncar/summa
-  license: GPL-3.0
+  license:  GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
   summary: "Hydrologic modeling framework"
