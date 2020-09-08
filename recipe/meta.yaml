@@ -9,7 +9,7 @@ source:
   sha256: 5d427fddd6d0d33af8c16bbb08cd9818514a518048b4719ce6bbedc3d79640c0
 
 build:
-  number: 3
+  number: 4
   skip: true  # [win]
 
 requirements:
@@ -21,7 +21,11 @@ requirements:
     - netcdf-fortran
   run:
     - netcdf-fortran
-
+    
+test:
+  commands:
+    - summa.exe --help
+    
 about:
   home: http://github.com/ncar/summa
   license:  GPL-3.0-or-later
