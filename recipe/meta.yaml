@@ -9,7 +9,7 @@ source:
   sha256: 5d427fddd6d0d33af8c16bbb08cd9818514a518048b4719ce6bbedc3d79640c0
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
 
 about:
   home: http://github.com/ncar/summa
-  license: GPL-3.0
+  license:  GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
   summary: "Hydrologic modeling framework"
