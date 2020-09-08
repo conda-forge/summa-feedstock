@@ -1,4 +1,4 @@
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: summa
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/ncar/summa/archive/v{{ version }}.tar.gz
-  sha256: 7a86e78ddcb3090b7517d067a0c29c2d938b1dfcf2d12d05e7b58f19777310af
+  sha256: 5d427fddd6d0d33af8c16bbb08cd9818514a518048b4719ce6bbedc3d79640c0
 
 build:
-  number: 10
+  number: 1
   skip: true  # [win]
 
 requirements:
