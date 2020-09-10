@@ -10,9 +10,9 @@ export F_MASTER=$(pwd)
 export FC_EXE=${FC}
 export FC_ENV=$(uname)
 export NCDF_PATH=${PREFIX}
-export LIBLAPACK="$LDFLAGS -L${PREFIX}/lib -Wl,-rpath,${PREFIX}/lib -llapack -lblas"
+# export LIBLAPACK="$LDFLAGS -L${PREFIX}/lib -Wl,-rpath,${PREFIX}/lib -llapack -lblas"
 export INCLUDES='-I${PREFIX}/include -I/usr/include'
-export LIBRARIES='-L${PREFIX}/lib -lnetcdff -L/usr/lib -llapack -lblas'
+export LIBRARIES='-Wl,-rpath,${PREFIX}/lib -L${PREFIX}/lib -lnetcdff -llapack -lblas'
 
 export CFLAGS="$CFLAGS -fPIC -I$PREFIX/include"
 export FLAGS_NOAH="-fPIC -p -g -ffree-form -fdefault-real-8 -ffree-line-length-none -fmax-errors=0 -fbacktrace -Wno-unused -Wno-unused-dummy-argument"
