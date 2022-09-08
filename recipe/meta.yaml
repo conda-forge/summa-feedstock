@@ -19,6 +19,7 @@ requirements:
     - liblapack
     - libblas
     - netcdf-fortran
+    - make
   host:
     - liblapack
     - libblas
