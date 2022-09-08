@@ -3,11 +3,15 @@ About summa
 
 Home: http://github.com/ncar/summa
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/summa-feedstock/blob/master/LICENSE.txt)
 
 Summary: Hydrologic modeling framework
+
+Development: https://github.com/ncar/summa
+
+Documentation: http://summa.readthedocs.io/
 
 SUMMA is a hydrologic modeling framework that can be used for the
 systematic analysis of alternative model conceptualizations with
