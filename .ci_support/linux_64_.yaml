@@ -15,9 +15,6 @@ libblas:
 liblapack:
 - 3.9 *netlib
 netcdf_fortran:
-- '4.5'
-pin_run_as_build:
-  netcdf-fortran:
-    max_pin: x.x
+- '4.6'
 target_platform:
 - linux-64
